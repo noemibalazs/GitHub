@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RepositoryDetails">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:elevation="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="24dp"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/repository_size"
+                android:text="@string/repo_size"
+                android:textStyle="bold"
+                android:fontFamily="@font/avenirmedium"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/repository_stargazers"
+                android:text="@string/repo_stargazers"
+                android:fontFamily="@font/avenirmedium"
+                android:textStyle="bold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:paddingTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/repository_forks"
+                android:text="@string/repo_fork"
+                android:fontFamily="@font/avenirmedium"
+                android:textStyle="bold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:paddingTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/repository_contributors"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginBottom="@dimen/activity_margin"
+        android:text="@string/repo_list_contributors"
+        android:padding="4dp"
+        android:fontFamily="@font/avenirblack"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contributors_recycle"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

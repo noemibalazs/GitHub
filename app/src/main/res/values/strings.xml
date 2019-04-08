@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GitHub</string>
+    <string name="name">Repo\'s name: %s</string>
+    <string name="full_name">Repos\'s full name: %s</string>
+    <string name="toast">Something went wrong, try it later!</string>
+    <string name="repo_details">Repo Details</string>
+    <string name="repo_size">Repo\'s size: %d</string>
+    <string name="repo_stargazers">Stargazers count: %d</string>
+    <string name="repo_fork">Forks count: %d</string>
+    <string name="repo_list_contributors">The list of contributors</string>
+    <string name="todo">Todo</string>
+    <string name="login">Login name</string>
+    <string name="no_internet">No internet</string>
+    <string name="loading_contributors">Loading contributors</string>
+    <string name="sorry">Sorry, no contributors</string>
+</resources>
