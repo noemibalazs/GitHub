@@ -2,7 +2,7 @@
  
  To Do:
  
- 1. Fetching data using Retrofit from Github API v3 
+ 1. Fetching all public repositories from Github API v3 using Retrofit
  2. Paginate the public repos 25 per page
  
  Libraries:
